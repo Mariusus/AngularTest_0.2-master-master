@@ -1,0 +1,21 @@
+<button routerLink="/customers">Back></button>
+
+<form [formGroup]="reviewForm" (ngSubmit)="save()">
+  <label>
+    Userid:
+    <input type="text" formControlName="Userid">
+  </label>
+  <label>
+    Productid:
+    <input type="text" formControlName="Productid">
+  </label>
+  Rating:
+  <input type="text" formControlName="Rating">
+  </label>
+  Comment:
+  <input type="text" formControlName="Comment">
+  </label>
+  <button type="submit">Save</button>
+
+
+</form>

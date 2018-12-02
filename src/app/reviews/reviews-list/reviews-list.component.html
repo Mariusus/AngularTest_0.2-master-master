@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let review of reviews ">
+    <a routerLink="/reviews/{{review.id}}"> {{review.comment}} {{review.rating}}</a>
+    <button routerLink="/reviews-update/{{reviews.id}}">Update</button>
+    <button (click)="delete(review.id)">Delete</button>
+
+  </li>
+</ul>
+<button routerLink="/reviews-add">Add Review</button>

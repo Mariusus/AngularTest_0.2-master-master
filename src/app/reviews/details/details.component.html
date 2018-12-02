@@ -1,0 +1,12 @@
+<button routerLink="/reviews">Back></button>
+<h1> Review Details</h1>
+<div *ngIf="review">
+<h2>{{review.id}}</h2>
+<h3> {{review.username}}</h3>
+<h4> {{review.comment}}</h4>
+  <h5> {{review.rating}}</h5>
+  <h6> {{review.productid}}</h6>
+</div>
+<div *ngIf="!review">
+  <h2>Review not found</h2>
+</div>
